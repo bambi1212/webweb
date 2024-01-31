@@ -1,5 +1,5 @@
 package com.example.webview;
-
+    
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
 
-
     }
 
+
     public void onClick(View view) {
-        webView.loadDataWithBaseURL("file:///android_res/drawable/", "<img src='waterbottle' />", null, "utf-8", Url);
+        webView.loadDataWithBaseURL("file:///android_asset/", "<img src='bottrash.jpg' />", null, "utf-8", Url);
 
     }
 }
